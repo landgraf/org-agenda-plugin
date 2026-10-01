@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "org-agenda",
+  "name": "Org Agenda",
+  "version": "0.1.0",
+  "author": "Pavel Zhukov",
+  "license": "MIT",
+  "description": "Org-mode agenda in the Omarchy bar: today's scheduled items, deadlines, upcoming days and NEXT actions, read from the running Emacs daemon.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Org Agenda",
+    "description": "Count of today's open agenda items, with a panel listing scheduled tasks, deadlines and next actions.",
+    "category": "Info",
+    "aliases": [
+      "org",
+      "agenda",
+      "tasks",
+      "todo",
+      "deadlines",
+      "emacs"
+    ],
+    "allowMultiple": false,
+    "defaultSection": "center"
+  }
+}
