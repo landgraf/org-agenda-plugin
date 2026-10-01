@@ -6,7 +6,7 @@ import "Model.js" as Model
 
 Panel {
   id: root
-  moduleName: "org-agenda"
+  moduleName: "io.github.landgraf.org-agenda"
   ipcTarget: ""
   manageIpc: false
 

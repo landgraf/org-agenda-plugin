@@ -28,8 +28,18 @@ omarchy plugin add https://github.com/landgraf/org-agenda-plugin --enable
 ```
 
 To try a local checkout instead, copy it (symlinks are not allowed) to
-`~/.config/omarchy/plugins/org-agenda/` and run
-`omarchy plugin enable org-agenda --section center`.
+`~/.config/omarchy/plugins/io.github.landgraf.org-agenda/` and run
+`omarchy plugin enable io.github.landgraf.org-agenda --section center`.
+
+## Remove
+
+```bash
+omarchy plugin remove io.github.landgraf.org-agenda
+```
+
+This removes the widget from the bar and deletes the plugin folder. The
+plugin keeps no other state, and nothing stays loaded in Emacs beyond a few
+`omarchy-org-agenda-*` functions, which are gone once Emacs restarts.
 
 ## Using it
 
@@ -57,9 +67,9 @@ Emacs. In the panel, `R` refreshes and `A` (or Enter) opens the full agenda.
 Set them on the bar entry:
 
 ```bash
-omarchy bar set org-agenda days 14 --json
-omarchy bar set org-agenda nextKeyword TODO
-omarchy bar set org-agenda refreshIntervalSec 600 --json
+omarchy bar set io.github.landgraf.org-agenda days 14 --json
+omarchy bar set io.github.landgraf.org-agenda nextKeyword TODO
+omarchy bar set io.github.landgraf.org-agenda refreshIntervalSec 600 --json
 ```
 
 | Key | Default | Meaning |
@@ -88,7 +98,7 @@ directory that wasn't watched before trigger instant refreshes only after
   often the Emacs server is not running.
 - **Items are missing**: compare with `M-x org-agenda a`. If Emacs doesn't
   show them either, check `org-agenda-files`.
-- **Force a refresh**: `omarchy-shell org-agenda refresh`.
+- **Force a refresh**: `omarchy-shell io.github.landgraf.org-agenda refresh`.
 
 ## License
 

@@ -7,7 +7,7 @@ import "Model.js" as Model
 
 BarWidget {
   id: root
-  moduleName: "org-agenda"
+  moduleName: "io.github.landgraf.org-agenda"
 
   property var snapshot: Model.emptySnapshot()
 
@@ -136,7 +136,7 @@ BarWidget {
   }
 
   IpcHandler {
-    target: "org-agenda"
+    target: "io.github.landgraf.org-agenda"
 
     function refresh(): void { root.refresh() }
     function open(): void { root.open() }

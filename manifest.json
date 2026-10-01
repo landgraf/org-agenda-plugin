@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "org-agenda",
+  "id": "io.github.landgraf.org-agenda",
   "name": "Org Agenda",
   "version": "0.1.0",
   "author": "Pavel Zhukov",
